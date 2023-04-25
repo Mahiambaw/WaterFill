@@ -1,0 +1,80 @@
+.water-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer-container {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-right: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+.inner-container button {
+  border: none;
+  padding: 2rem;
+  border-radius: 5px;
+  cursor: pointers;
+  font-size: 1.5rem;
+}
+.image-container {
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  color: #00b3ff;
+  filter: brightness(50%);
+}
+
+@media (max-width: 82em) {
+  .outer-container {
+    gap: 7rem;
+  }
+  .inner-container {
+    margin-right: 7rem;
+  }
+}
+@media (max-width: 56em) {
+  .outer-container {
+    gap: 4rem;
+  }
+  .inner-container {
+    margin-right: 4rem;
+  }
+}
+@media (max-width: 50em) {
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 29em) {
+  .inner-container button {
+    padding: 1rem;
+    border-radius: 2px;
+
+    font-size: 1rem;
+  }
+
+  .image-container {
+    width: 10rem;
+    height: 20rem;
+  }
+}
